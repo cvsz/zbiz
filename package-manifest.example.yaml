@@ -1,0 +1,91 @@
+package:
+  id: "COMPANY-YYYYMMDD-001"
+  company_name_th: "<REQUIRED>"
+  company_name_en: "<REQUIRED>"
+  owner: "<RESPONSIBLE_PERSON>"
+  target_submission_date: "YYYY-MM-DD"
+  status: draft
+  last_reviewed_at: "YYYY-MM-DD"
+  reviewer: "<REVIEWER>"
+
+documents:
+  - id: name-reservation
+    title: Company name reservation evidence
+    status: missing
+    required: true
+    path: null
+    expires_at: null
+    notes: ""
+
+  - id: company-intake
+    title: Completed company intake questionnaire
+    status: draft
+    required: true
+    path: templates/00-intake/company-intake-questionnaire.md
+    notes: ""
+
+  - id: founders-identification
+    title: Founder identification records
+    status: missing
+    required: true
+    path: null
+    notes: "Store outside the public repository."
+
+  - id: shareholders-register
+    title: Share allocation and shareholder register
+    status: draft
+    required: true
+    path: templates/03-founders-shareholders/shareholder-register.csv
+    notes: ""
+
+  - id: director-consents
+    title: Director consents and identity records
+    status: missing
+    required: true
+    path: templates/04-directors/director-consent.md
+    notes: ""
+
+  - id: registered-office
+    title: Registered-office consent and supporting evidence
+    status: missing
+    required: true
+    path: templates/07-registered-office/owner-consent.md
+    notes: ""
+
+  - id: statutory-meeting
+    title: Statutory meeting minutes
+    status: draft
+    required: true
+    path: templates/08-meetings/statutory-meeting-minutes.md
+    notes: ""
+
+  - id: capital-reconciliation
+    title: Capital and share reconciliation
+    status: review
+    required: true
+    path: config/company.example.yaml
+    notes: "Must pass automated validation."
+
+  - id: official-dbd-forms
+    title: Current official DBD forms or online submission records
+    status: missing
+    required: true
+    path: null
+    notes: "Obtain from the current official DBD system; do not generate counterfeit forms."
+
+  - id: professional-review
+    title: Legal, accounting, or tax review where required
+    status: review
+    required: false
+    path: null
+    notes: "Recommended for foreign ownership, regulated activities, complex capital, or tax issues."
+
+allowed_statuses:
+  - missing
+  - draft
+  - review
+  - ready
+  - submitted
+  - accepted
+  - rejected
+  - expired
