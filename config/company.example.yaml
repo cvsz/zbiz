@@ -1,0 +1,46 @@
+company:
+  legal_name_th: "บริษัท ซีซเดฟ จำกัด"
+  legal_name_en: "ZEAZDEV COMPANY LIMITED"
+  proposed_names:
+    - "ZEAZDEV COMPANY LIMITED"
+    - "ZEAZ DEV COMPANY LIMITED"
+  business_type: "private_limited_company"
+  registered_office:
+    address_line_1: "REPLACE_WITH_HOUSE_NUMBER_AND_BUILDING"
+    address_line_2: "REPLACE_WITH_ROAD_OR_SOI"
+    subdistrict: "REPLACE_WITH_SUBDISTRICT"
+    district: "Bang Kapi"
+    province: "Bangkok"
+    postal_code: "10240"
+    country: "Thailand"
+  contact:
+    phone: "+66-92-949-9790"
+    email: "REPLACE_WITH_COMPANY_EMAIL"
+    website: "https://www.zeaz.dev"
+capital:
+  registered_capital_thb: 1000000
+  par_value_thb: 100
+  total_shares: 10000
+  paid_up_percentage: 25
+founders:
+  - id: "founder-001"
+    full_name_th: "REPLACE_WITH_FULL_NAME_TH"
+    full_name_en: "REPLACE_WITH_FULL_NAME_EN"
+    nationality: "Thai"
+    id_or_passport: "REDACTED"
+    address: "REPLACE_WITH_ADDRESS"
+shareholders:
+  - founder_id: "founder-001"
+    share_count: 10000
+    share_class: "ordinary"
+directors:
+  - founder_id: "founder-001"
+    signing_authority: "One director signs and affixes the company seal, if adopted."
+objectives:
+  - "Develop, license, operate, and maintain software, cloud platforms, artificial intelligence systems, and digital services."
+  - "Provide information-technology consulting, systems integration, cybersecurity, data engineering, training, and technical support."
+compliance:
+  beneficial_owners_reviewed: false
+  identity_documents_verified: false
+  registered_office_evidence_verified: false
+  official_forms_current_version_confirmed: false
